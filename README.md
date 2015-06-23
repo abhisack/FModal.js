@@ -1,6 +1,6 @@
 # FModal.js
 A jQuery dependent library to create full screen modals using attributes.
 
-Read full info on following page:
+Read full info and guide on the following page:
 
-http://abhisheksachan.in/FModal.js/
+http://abhisack.github.io/FModal.js/
