@@ -1,0 +1,23 @@
+//Variables to be used for modal-translate animation
+
+$top: translateY(-100%);
+$right: translateX(100%);
+$bottom: translateY(100%);
+$left: translateX(-100%);
+
+
+//modal settings
+$modal-background: darken(white, 10%);
+$modal-header-background: lighten(#299, 10%);
+$modal-header-box-shadow: 0 1px 1px lighten(#333, 50%);
+$close-button-background: tomato;
+$emerge-out-from: $bottom;
+
+//modal-text-settings
+$close-button-color: white;
+$header-title-color: white;
+$main-text-color: #333;
+$btn-color: white;
+$btn-background: lighten(#299, 20%);
+
+

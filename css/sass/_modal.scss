@@ -1,0 +1,539 @@
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $modal-background;
+        opacity: 0;
+    visibility: hidden;
+    pointer-events: none !important;
+    -webkit-transition: all .3s ease-out;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.modal-scaled {
+     opacity: 1 !important;
+    -webkit-animation: scale .3s ease-out forwards;
+    -moz-animation: scale .3s ease-out forwards;
+    -ms-animation: scale .3s ease-out forwards;
+    -o-animation: scale .3s ease-out forwards;
+     animation: scale .3s ease-out forwards;
+}
+
+.modal-unscaled {
+    -webkit-animation: unscale .3s ease-out forwards; 
+       -moz-animation: unscale .3s ease-out forwards; 
+    -ms-animation: unscale .3s ease-out forwards; 
+    -o-animation: unscale .3s ease-out forwards; 
+     animation: unscale .3s ease-out forwards; 
+}
+/***animations for modal-scale***/
+
+@-webkit-keyframes scale {
+    
+    from {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+    
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+        
+    }
+}
+
+@-moz-keyframes scale {
+    
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    to {
+        transform: scale(1);
+        opacity: 1 !important;
+        
+    }
+}
+
+@-ms-keyframes scale {
+    
+    from {
+        -ms-transform: scale(0);
+        opacity: 0;
+    }
+    
+    to {
+        -ms-transform: scale(1);
+        opacity: 1;
+        
+    }
+}
+
+@-o-keyframes scale {
+    
+    from {
+        -o-transform: scale(0);
+        opacity: 0;
+    }
+    
+    to {
+        -o-transform: scale(1);
+        opacity: 1;
+        
+    }
+}
+
+@keyframes scale {
+    
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    to {
+        transform: scale(1);
+        opacity: 1;
+        
+    }
+}
+
+
+/****reverse scale***/
+
+@-webkit-keyframes unscale {
+    
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    
+    to {
+        -webkit-transform: scale(0) translate(0);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes unscale {
+    
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    to {
+        transform: scale(0) translate(0);
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes unscale {
+    
+    from {
+        -ms-transform: scale(1);
+        opacity: 1;
+    }
+    
+    to {
+        -ms-transform: scale(0) translate(0);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes unscale {
+    
+    from {
+        -o-transform: scale(1);
+        opacity: 1;
+    }
+    
+    to {
+        -o-transform: scale(0) translate(0);
+        opacity: 0;
+    }
+}
+
+@keyframes unscale {
+    
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    to {
+        transform: scale(0) translate(0);
+        opacity: 0;
+    }
+}
+
+
+.modal-translated {
+    -webkit-animation: translate .3s ease-out forwards;
+    -moz-animation: translate .3s ease-out forwards;
+    -ms-animation: translate .3s ease-out forwards;
+    -o-animation: translate .3s ease-out forwards;
+     animation: translate .3s ease-out forwards;
+}
+
+.modal-untranslated {
+    -webkit-animation: untranslate .3s ease-out forwards;
+    -moz-animation: untranslate .3s ease-out forwards;
+    -ms-animation: untranslate .3s ease-out forwards;
+    -o-animation: untranslate .3s ease-out forwards;
+     animation: untranslate .3s ease-out forwards;
+}
+
+/***animations for "modal-translate"***/
+
+@-webkit-keyframes translate {
+    
+    from {
+        -webkit-transform: $emerge-out-from;
+    }
+    
+    to {
+        -webkit-transform: translate(0);
+    }
+}
+
+@-moz-keyframes translate {
+    
+    from {
+        -moz-transform: $emerge-out-from;
+    }
+    
+    to {
+        -moz-transform: translate(0);
+    }
+}
+
+@-ms-keyframes translate {
+    
+    from {
+        -ms-transform: $emerge-out-from;
+    }
+    
+    to {
+        -ms-transform: translate(0);
+    }
+}
+
+@-o-keyframes translate {
+    
+    from {
+        -o-transform: $emerge-out-from;
+    }
+    
+    to {
+        -o-transform: translate(0);
+    }
+}
+
+@keyframes translate {
+    
+    from {
+        transform: $emerge-out-from;
+    }
+    
+    to {
+        transform: translate(0);
+    }
+}
+
+/**reverse translate**/
+
+@-webkit-keyframes untranslate {
+    
+   from {
+        -webkit-transform: translate(0);
+    }
+    
+    to {
+        -webkit-transform: $emerge-out-from;
+    }
+}
+
+@-moz-keyframes untranslate {
+    
+   from {
+         transform: translate(0);
+    }
+    
+    to {
+        transform: $emerge-out-from;
+    }
+}
+
+@-ms-keyframes untranslate {
+    
+    from {
+        -ms-transform: translate(0);
+    }
+    
+    to {
+        -ms-transform: $emerge-out-from;
+    }
+}
+
+@-o-keyframes untranslate {
+    
+    from {
+        -o-transform: translate(0);
+        
+    }
+    
+    to {
+        -o-transform: $emerge-out-from;
+    }
+}
+
+@keyframes untranslate {
+    
+    from {
+          transform: translate(0);
+    }
+    
+    to {
+           transform: $emerge-out-from;
+    }
+}
+
+.modal-faded {
+    -webkit-animation: fadeIn .3s ease-out forwards;
+    -moz-animation: fadeIn .3s ease-out forwards;
+    -ms-animation: fadeIn .3s ease-out forwards;
+    -o-animation: fadeIn .3s ease-out forwards;
+     animation: fadeIn .3s ease-out forwards;
+}
+
+.modal-unfaded {
+    -webkit-animation: fadeOut .3s ease-out forwards;
+    -moz-animation: fadeOut .3s ease-out forwards;
+    -ms-animation: fadeOut .3s ease-out forwards;
+    -o-animation: fadeOut .3s ease-out forwards;
+     animation: fadeOut .3s ease-out forwards;
+}
+
+/****animations for modal-fade***/
+
+@-webkit-keyframes fadeIn {
+    
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    to {
+       visbility: visible;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    to {
+       visbility: visible;
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    to {
+       visbility: visible;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    to {
+       visbility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    to {
+       visbility: visible;
+        opacity: 1;
+    }
+}
+
+/**reverse fade**/
+@-webkit-keyframes fadeOut {
+    
+    from {
+       visibility: visible;
+        opacity: 1;
+    }
+    
+    to {
+       visibility: hidden;
+        opacity: 0;
+        
+    }
+}
+
+@-moz-keyframes fadeOut {
+    
+    from {
+       visibility: visible;
+        opacity: 1;
+    }
+    
+    to {
+       visibility: hidden;
+        opacity: 0;
+        
+    }
+}
+
+
+@-ms-keyframes fadeOut {
+    
+    from {
+       visibility: visible;
+        opacity: 1;
+    }
+    
+    to {
+       visibility: hidden;
+        opacity: 0;
+        
+    }
+}
+
+@-o-keyframes fadeOut {
+    
+    from {
+       visibility: visible;
+        opacity: 1;
+    }
+    
+    to {
+       visibility: hidden;
+        opacity: 0;
+        
+    }
+}
+
+@keyframes fadeOut {
+    
+    from {
+       visibility: visible;
+        opacity: 1;
+    }
+    
+    to {
+       visibility: hidden;
+        opacity: 0;
+        
+    }
+}
+
+.modal header {
+    position: relative;
+    height: 50px;
+    background: $modal-header-background;
+    box-shadow: $modal-header-box-shadow;
+    text-align: center;
+    
+    h2 {
+        margin: 10px 0;
+        text-align: center;
+        display: inline-block;
+        color: $header-title-color;
+    }
+    
+   .btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 20px;
+        border: 0;
+        outline: 0;
+        background: $close-button-background;
+        color: $close-button-color;
+        cursor: pointer;
+       
+       &:active {
+           background: darken($close-button-background, 10%);
+       }
+    }
+}
+
+.modal  section {
+      width: 60%;
+    margin: 50px auto;
+    
+    p {
+        color: $main-text-color;
+        font-weight: 200;
+    }
+    
+    .section-btn {
+        display: block;
+        width: 300px;
+        border: none;
+        color: $btn-color;
+        background: $btn-background;
+        padding: 10px 20px;
+        margin: 50px 0 0;
+        
+        &:active {
+           background: darken($btn-background, 10%);
+       }
+    }
+}
+
+.modal-is-opened {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto !important;
+  
+}
+
+
+@media screen and(max-width: 480px) {
+    
+    .modal {
+        font-size: 14px;
+    }
+    
+    .modal section {
+     width: 80%;
+    margin: 50px auto;
+        
+        .section-btn {
+            width: 100%;
+        }
+    }
+}

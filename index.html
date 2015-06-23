@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>FModal.JS</title>                                                                                   
+       <meta name="title" content="FModal.JS" />
+      <meta name="author" content="Abhishek Sachan" />
+       <meta name="description" content="A library for creating modals easily" />
+      <link rel="stylesheet" href="css/modal.css">
+      <link rel="stylesheet" href="css/icomoon/style.css">
+        
+      
+    </head>
+     <body>
+         
+         <header class="site-header">
+         <h2 data-entrance="modal-scale">FModal.JS</h2>
+             <nav role="nav">
+                 <ul>
+                     <li><a href="#GetStarted"><span class="icon-pointer"></span> GET STARTED</a></li>
+                     <li><a href="#"><span class="icon-download"></span> DOWNLOAD</a></li>
+                 </ul>
+             </nav>
+         </header>
+         <main>
+ <div class="container">
+     
+     <button class="btn" data-entrance="modal-translate" data-title="Emerge-out Modal" data-text="This is a 'emerge-out' modal that emerges from bottom. Don't want it to emerge it from bottom? You can make it emerge out from top, left or right too. Just go to _seetings.scss and change your setting.">Emerge out Modal</button><!--
+     --><button class="btn" data-entrance="modal-scale" data-title="Zoom-in Modal". data-text="This is a Zoom-in modal with a button." data-btn="yes" data-btn-text="Go to Codepen " data-btn-link="codepen.io">Zoom-in Modal</button><!--
+     --><button class="btn" data-title="Fade-in Modal" data-text="FModal.JS helps you create not very extraordinary but simple modals with basic effects that you often need for your site. " data-entrance="modal-fade">Fade-in Modal</button>
+         </div>
+             
+        <section class="project-details">
+            <article>
+            <h1 data-entrance="modal-scale">What Is FModal.JS?</h1>
+            <p>FModal.JS is a lightweight JS library to create simple full-screen modals.<br/>
+                To sum up, FModal.JS comes into play when things don't fit in a tooltip.</p>
+                </article>
+             </section>
+             
+             <section class="project-details">
+                 <article>
+            <h1>How <strong>FModal.JS</strong> is useful?</h1>
+            <p>FModal.JS helps you create not very extraordinary but simple modals with basic effects that you often need for your site.<br/>
+                 Using a few attributes on any element gets your modals running.</p>
+                     </article>
+             </section>
+             
+               <section class="project-details">
+                   <article>
+            <h1 id="GetStarted">Usage</h1>
+            <p> All your working files are inside FModal.JS folder. Link jQuery, FModal.JS, modal.css to your page.</p>
+                   
+                   <pre>
+                     <code class="language-markup">
+                     
+                      &lt;script src="jquery.min.js">&lt;/script>
+                      &lt;script src="fmodal.min.js">&lt;/script>
+                      &lt;link rel="stylesheet" href="modal.css">&lt;/link>
+                    </code>
+                    </pre>
+                   <p>Now FModal.JS is ready to work. What you need to do is assign the three attriutes <strong>data-entrance</strong>, <strong>data-title</strong> and <strong>data-text</strong>  to any element with valid values. </p>
+                   <pre>
+                     <code class="language-markup">
+                     
+                      &lt;button data-entrance="modal-fade" data-title="Fade-in Modal" data-text="Hello! I'm a Fade-in modal.">Button-1&lt;/button>
+                    </code>
+                    </pre>
+                   <p><strong>data-entrance</strong> accepts one of the three available values on any element. 
+                       <ul>
+                           <li>modal-translate</li>
+                           <li>modal-scale</li>
+                           <li>modal-fade</li>
+                   </ul>
+                   </p>
+             <p><strong>data-title</strong> takes the value for the title of the modal and <strong>data-text</strong> for the text (main content) of the modal.</p>
+                 <p>Note that inspite of having <strong>data-title</strong> and <strong>data-text</strong> on an element, modal won't open until <strong>data-entrance</strong> is assigned to that element with one of the three values listed above.</p>
+                   
+                   <h3>Inserting Button</h3>
+                   <p>If you want to give a link in your modal, you can do that by inserting a stylable button using following attributes:
+                      <ul>
+                           <li>data-btn</li>
+                           <li>data-btn-text</li>
+                           <li>data-btn-link</li>
+                   </ul>
+             </p>
+             <pre>
+             <code class="language-markup">
+             &lt;button data-entrance="modal-scale" data-title="Zoom-in Modal". data-text="I'm a Zoom-in modal with a button." data-btn="yes" data-btn-text="Go to Codepen" data-btn-link="codepen.io">Zoom-in Modal&lt;/button>
+             </code>
+             </pre>
+                   <p><strong>data-btn</strong> set to "yes" decides whether button has to be inserted, <strong>data-btn-text</strong> sets text to the button and <strong>data-btn-link</strong> sets link to the button.</p>
+                   </article>
+             </section>
+         
+          <section class="project-details">
+                 <article>
+            <h1>Styling the Modal</h1>
+            <p>Quick styling can be done using variables in <strong>modal.scss</strong>. After you've finished editing the variable values, Compile the file to get your <strong>modal.css</strong> file ready to be used.</p>
+   </article>
+             </section>
+                 
+             
+             <section class="project-details">
+                 <article>
+            <h1>Browser Support</h1>
+            <p>FModal.JS works in all latest browsers.</p>
+   </article>
+             </section>
+         
+             <section class="project-details">
+                 <article>
+            <h1>Why jQuery Dependent?</h1>
+            <p>The whole little library is written in Vanilla JS (only single line of jQuery). And now it'd be striking your mind <a href="http://youmightnotneedjquery.com/">why</a> it's jQuery dependent then? The reason is simple. Event Deligations! which jQuery handles so nicely.</p>
+                     </article>
+                  <div class="container">
+     
+     <a class="btn" href="#"><span class="icon-github"></span> Fork on Github</a><!--
+--><a class="btn" href="#"><span class="icon-twitter"></span> Tweet</a><!--
+     --><a class="btn" href="mailto:iamabhishekfromindia@gmail.com"><span class="icon-feedback"></span> Feedback</a>
+         </div>
+             </section>
+                 
+             </main>
+       <!--
+         <div class="modal">
+             <header>
+                 <h2>Title</h2>
+                 <button class="btn-close">X</button>
+             </header>
+             
+              <section>
+                     <p>
+                  </p>
+                  
+                 </section>
+         </div>
+-->
+    
+    <footer>
+        <p>Created with love and an editor by <a href="http://abhisheksachan.in">Abhishek Sachan</a></p>
+    </footer>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+               <script type="text/javascript" src="js/fmodal.js"></script>
+    </body>
+</html>
