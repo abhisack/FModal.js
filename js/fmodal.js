@@ -26,9 +26,11 @@ modal_section_btn.classList.add("section-btn");
 document.body.appendChild(modal);
 modal.classList.add("modal");
 
-
-
-$(document).on("click", "[data-entrance]", openModal);
+[].forEach.call(document.querySelectorAll('[data-entrance]'), function (el) {
+            el.addEventListener('click', function () {
+                openModal;
+            }, false);
+        });
  
 function openModal(e) {
     var item= this;
