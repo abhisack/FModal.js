@@ -79,6 +79,12 @@ modal.classList.add("modal-is-opened");
 //create new variable for header_btn for ease
      var close= header_btn;
     close.addEventListener("click", closeModal, false); //add event listener to close to handle closeModal function at the last
+    //close modal when "esc" key is pressed
+    window.addEventListener("keyup", function(e) {
+    if(e.keyCode===27) {
+        closeModal();
+    }                       
+     });
     
     
     /*** If 'data-btn' is set to 'yes', assign textContent and 'href' for button(modal_section_btn) we created
