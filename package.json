@@ -1,21 +1,18 @@
 {
-  "name": "FModal.js",
+  "name": "fmodal",
   "version": "1.0.0",
   "description": "A jQuery dependent library to create full screen modals using attributes.",
-  "main": "FModal.JS/fmodal.js",
   "scripts": {
     "test": "fmodal"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhisack/FModal.js.git"
+    "url": "https://github.com/abhisack/fmodal.git"
   },
   "keywords": [
-    "Full",
-    "sdxcrwewen",
     "modals"
   ],
-  "author": "Abhishwek Sachan",
+  "author": "Abhishek Sachan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/abhisack/FModal.js/issues"
