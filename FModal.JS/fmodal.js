@@ -130,11 +130,4 @@ modal.classList.remove("modal-is-opened");
         modal.classList.remove("modal-faded");
         modal.classList.add("modal-unfaded");
        }
-    
-    e.preventDefault();
 }
-
-
-
-
-
