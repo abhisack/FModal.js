@@ -2,7 +2,7 @@
   "name": "fmodal",
   "version": "1.0.0",
   "description": "A jQuery dependent library to create full screen modals using attributes.",
-  "main": "js/fmodal.js",
+  "main": "FModal.JS/fmodal.js",
   "scripts": {
     "test": "fmodal"
   },
