@@ -21,7 +21,6 @@ modal_section_btn.textContent= "Know more";
 modal_section_btn.classList.add("section-btn");
 
 
-
 // THE MAIN APPENDING!!! 
 document.body.appendChild(modal);
 modal.classList.add("modal");
