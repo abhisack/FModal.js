@@ -1,0 +1,23 @@
+/*
+Errno::ENOENT: No such file or directory - modal.scss
+
+Backtrace:
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:482:in `read'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:209:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:293:in `watch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/plugin.rb:108:in `method_missing'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/exec/sass_scss.rb:384:in `watch_or_update'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/exec/base.rb:52:in `parse'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/lib/sass/exec/base.rb:19:in `parse!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.17/bin/sass:13:in `<top (required)>'
+C:/RailsInstaller/Ruby1.9.3/bin/sass:23:in `load'
+C:/RailsInstaller/Ruby1.9.3/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - modal.scss"; }

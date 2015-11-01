@@ -148,6 +148,9 @@ main {
   background: #5f8f8f;
   color: white; }
 
+.jquery-sec {
+  text-decoration: line-through; }
+
 footer {
   background: #365252;
   text-align: center;
@@ -201,6 +204,7 @@ footer {
   background: #e6e6e6;
   opacity: 0;
   visibility: hidden;
+  overflow: auto;
   pointer-events: none !important;
   -webkit-transition: all .3s ease-out;
   box-sizing: border-box;
@@ -447,21 +451,23 @@ footer {
     opacity: 0; } }
 .modal header {
   position: relative;
-  height: 50px;
+  padding: .45em 1.5em;
+  font-size: 1.2em;
   background: #2bc3c3;
   box-shadow: 0 1px 1px #b3b3b3;
   text-align: center; }
   .modal header h2 {
-    margin: 10px 0;
+    margin: 0 0;
     text-align: center;
     display: inline-block;
-    color: white; }
+    color: white;
+    font-size: 1.1em; }
   .modal header .btn-close {
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 1.4em;
     border: 0;
     outline: 0;
     background: tomato;
@@ -472,9 +478,10 @@ footer {
 
 .modal section {
   width: 60%;
-  margin: 50px auto; }
+  margin: 3em auto; }
   .modal section p {
     color: #333;
+    font-size: 1.2em;
     font-weight: 200; }
   .modal section .section-btn {
     display: block;
@@ -482,8 +489,8 @@ footer {
     border: none;
     color: white;
     background: #4ad7d7;
-    padding: 10px 20px;
-    margin: 50px 0 0; }
+    padding: 0.625em 1.25em;
+    margin: 2em 0 0; }
     .modal section .section-btn:active {
       background: #2bc3c3; }
 
@@ -496,9 +503,12 @@ footer {
   .modal {
     font-size: 14px; }
 
+  .modal header {
+    text-align: left; }
+
   .modal section {
-    width: 80%;
-    margin: 50px auto; }
+    width: 100%;
+    padding: 0 1.5em; }
     .modal section .section-btn {
       width: 100%; } }
 

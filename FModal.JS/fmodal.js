@@ -27,8 +27,15 @@ document.body.appendChild(modal);
 modal.classList.add("modal");
 
 
-
-$(document).on("click", "[data-entrance]", openModal);
+//helper function to iterate over modal nodes
+function $$(selector, context) {
+    context = context || document;
+    var elements = context.querySelectorAll(selector);
+    return Array.prototype.slice.call(elements);
+} 
+$$( "[data-entrance]" ).forEach( function(el) {
+  el.addEventListener("click", openModal, false);
+});
  
 function openModal(e) {
     var item= this;
@@ -39,8 +46,7 @@ function openModal(e) {
     var btnLink= this.getAttribute("data-btn-link");
     header_title.textContent= modalTitle;
     modal_section_text.textContent= modalText;
-    
-    
+    document.body.style.overflow= "hidden";
     
     /*** get the value of 'data-entrance attribute, add and remove appropriate classes accroding to the attribute ***/
     
@@ -74,6 +80,7 @@ function openModal(e) {
     
 modal.classList.add("modal-is-opened");
      modal.style.pointerEvents= "auto";
+   
     
     
 //create new variable for header_btn for ease
@@ -130,4 +137,12 @@ modal.classList.remove("modal-is-opened");
         modal.classList.remove("modal-faded");
         modal.classList.add("modal-unfaded");
        }
+    
+    
+    document.body.style.overflow= "auto";
 }
+
+
+
+
+
