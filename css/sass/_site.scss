@@ -202,12 +202,16 @@ main {
     }
 }
 
-
 .project-details:nth-of-type(1) {
        margin: 100px 0 0;
     background: lighten($theme-sec, 30%);
     color: white;
 }
+
+.jquery-sec {
+    text-decoration: line-through;
+}
+
 
 footer {
     background: lighten($theme-sec, 10%);

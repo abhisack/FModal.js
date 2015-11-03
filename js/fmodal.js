@@ -21,14 +21,23 @@ modal_section_btn.textContent= "Know more";
 modal_section_btn.classList.add("section-btn");
 
 
-
 // THE MAIN APPENDING!!! 
 document.body.appendChild(modal);
 modal.classList.add("modal");
 
 
+//helper function to iterate over modal nodes
+function $$(selector, context) {
+    context = context || document;
+    var elements = context.querySelectorAll(selector);
+    return Array.prototype.slice.call(elements);
+} 
 
-$(document).on("click", "[data-entrance]", openModal);
+//events and event handlers
+
+$$( "[data-entrance]" ).forEach( function(el) {
+  el.addEventListener("click", openModal, false);
+});
  
 function openModal(e) {
     var item= this;
@@ -39,8 +48,7 @@ function openModal(e) {
     var btnLink= this.getAttribute("data-btn-link");
     header_title.textContent= modalTitle;
     modal_section_text.textContent= modalText;
-    
-    
+    document.body.style.overflow= "hidden";
     
     /*** get the value of 'data-entrance attribute, add and remove appropriate classes accroding to the attribute ***/
     
@@ -74,6 +82,7 @@ function openModal(e) {
     
 modal.classList.add("modal-is-opened");
      modal.style.pointerEvents= "auto";
+   
     
     
 //create new variable for header_btn for ease
@@ -131,7 +140,8 @@ modal.classList.remove("modal-is-opened");
         modal.classList.add("modal-unfaded");
        }
     
-    e.preventDefault();
+    
+    document.body.style.overflow= "auto";
 }
 
 
