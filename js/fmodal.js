@@ -37,6 +37,7 @@ function $$(selector, context) {
 
 $$( "[data-entrance]" ).forEach( function(el) {
   el.addEventListener("click", openModal, false);
+  el.addEventListener("touchstart", openModal, false);
 });
  
 function openModal(e) {
@@ -142,6 +143,8 @@ modal.classList.remove("modal-is-opened");
     
     
     document.body.style.overflow= "auto";
+    
+    e.preventDefault();
 }
 
 
