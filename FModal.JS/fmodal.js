@@ -1,3 +1,4 @@
+var fmodal= (function() {
 //DOM Elements Creation and appending
 
 var modal= document.createElement("div");
@@ -32,8 +33,12 @@ function $$(selector, context) {
     var elements = context.querySelectorAll(selector);
     return Array.prototype.slice.call(elements);
 } 
+
+//events and event handlers
+
 $$( "[data-entrance]" ).forEach( function(el) {
   el.addEventListener("click", openModal, false);
+  el.addEventListener("touchstart", openModal, false);
 });
  
 function openModal(e) {
@@ -139,9 +144,11 @@ modal.classList.remove("modal-is-opened");
     
     
     document.body.style.overflow= "auto";
+    
+    e.preventDefault();
 }
 
-
+}) ();
 
 
 
