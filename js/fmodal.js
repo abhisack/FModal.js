@@ -1,3 +1,4 @@
+var fmodal= (function() {
 //DOM Elements Creation and appending
 
 var modal= document.createElement("div");
@@ -147,7 +148,7 @@ modal.classList.remove("modal-is-opened");
     e.preventDefault();
 }
 
-
+}) ();
 
 
 
